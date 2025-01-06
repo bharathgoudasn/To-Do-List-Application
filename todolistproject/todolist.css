@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
+                      linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+h1 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 3em;
+}
+
+input, button {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+input {
+    flex-grow: 1;
+    border: 1px solid #333;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(187, 134, 252, 0.1);
+}
+
+input:focus {
+    outline: none;
+    border-color: #03dac6;
+    box-shadow: 0 0 0 2px rgba(3, 218, 198, 0.2);
+}
+
+button {
+    background-color: #03dac6;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(3, 218, 198, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #018786;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(3, 218, 198, 0.3);
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(187, 134, 252, 0.2);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #d8d3d3;
+    background-color: #3a3939;
+}
+
+.task-button {
+    display: flex;
+    gap: 10px;
+}
+
+.task-button button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.task-button button:first-child {
+    background-color:  #03dac6;;
+    color: #000;
+}
+
+.task-button button:first-child:hover {
+    background-color: #a55742;
+}
+
+.task-button button:nth-child(2) {
+    background-color: #03dac6;
+    color: #000;
+}
+
+.task-button button:nth-child(2):hover {
+    background-color: #189d21;
+}
